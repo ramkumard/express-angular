@@ -1,0 +1,5 @@
+<div class="container" ng-controller="categoryController as cat">
+<ul ng-repeat="category in cat.sub_categories">
+  <li><a href ="#/{{category.permalink.split('/')[2]}}/{{category.permalink.split('/')[3]}}">{{ category.name }}</a></li>
+</ul>
+</div>

@@ -1,0 +1,6 @@
+<div class="container" ng-controller="saleController as sale">
+<ul ng-repeat="category in sale.sale_category">
+  <li>{{ category.name }}</li>
+  <a href="#/{{category.permalink.split('/')[1]}}/{{category.permalink.split('/')[2]}}/{{category.permalink.split('/')[3]}}"><img ng-src="{{category.images}}"/></a>
+</ul>
+</div>

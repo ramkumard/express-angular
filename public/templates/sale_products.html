@@ -1,0 +1,7 @@
+<div class="container" ng-controller="saleproductController as saleproduct">
+<ul ng-repeat="pro in saleproduct.products">
+  <li>{{ pro.name }}</li>
+  <a href="{{pro.name}}"><img ng-src="{{pro.image}}"/></a>
+  <li>{{ pro.cost_price }}</li>
+</ul>
+</div>
